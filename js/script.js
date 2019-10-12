@@ -31,12 +31,12 @@ $(document).ready(function () {
     });
     var owl = $('.owl-carousel').owlCarousel({
         loop: true,
-        items: 4,
+        items: 5, 
+        dots: true,
         autoplay: true,
         slideTransition: 'linear',
         autoplayTimeout: 5000,
         autoplaySpeed: 7000,
-        autoplayHoverPause: true,
         responsive: {
             0: {
                 items: 1
@@ -52,14 +52,14 @@ $(document).ready(function () {
             }
         }
     });
-    owl.on('mousewheel', '.owl-stage', function (e) {
-        if (e.deltaY > 0) {
-            owl.trigger('next.owl');
-        } else {
-            owl.trigger('prev.owl');
-        }
-        e.preventDefault();
-    });
+    // owl.on('mousewheel', '.owl-stage', function (e) {
+    //     if (e.deltaY > 0) {
+    //         owl.trigger('next.owl');
+    //     } else {
+    //         owl.trigger('prev.owl');
+    //     }
+    //     e.preventDefault();
+    // });
 
     var skillsTopOffset = $(".skillsSection").offset().top;
     var statssTopOffset = $(".statsSection").offset().top;
