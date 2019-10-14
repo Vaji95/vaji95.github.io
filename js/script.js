@@ -21,7 +21,7 @@ $(document).ready(function () {
     });
 
     var typed = new Typed(".typed", {
-        strings: ["Web developer.", "Software engineer.", "Student."],
+        strings: ["CSharp","JavaScript","HTML","CSS","React","Java","Pascal","VBA","Bot", "Microsoft Azure", "Microsoft O365","Angular.js","Vue.js","Next.js","Python","SQL","Node.js","Ruby on Rails"],
         typeSpeed: 90,
         loop: true,
         startDelay: 1000,
